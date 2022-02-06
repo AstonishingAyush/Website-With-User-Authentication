@@ -1,34 +1,3 @@
-<?php
-include 'config.php';
-
-error_reporting(0);
-
-if(isset($_POST['submit'])){
-    $user = $_POST['yourname'];
-    $email = $_POST['email'];
-    $comments = ($_POST['comments']);
-
-    $sql = "INSERT INTO comments (yourname, email, message)
-            VALUES ('$user', '$email', '$comments')";
-    $result = mysqli_query($conn, $sql);
-
-    if($result){
-        echo "<script>alert('Thanks for posting.')</script";
-    }
-
-}
-   
-
-
-?>
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
