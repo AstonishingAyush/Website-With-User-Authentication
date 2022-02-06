@@ -1,0 +1,241 @@
+
+.parallax1{
+    background: url('/img/paint-brush.jpeg');
+    min-height: 170%;
+    display: flex;
+}
+
+.parallax1, .parallax2, .parallax3{
+    position: relative;
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading{
+    position: absolute;
+    color: #ffffff;
+    font-size: 550%;  /* here problem may come */
+    font-weight: 700;
+    top: 38%;
+    width: 100%;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+
+.subhead{
+    padding: 4px;
+    margin: 0;
+    color: #000;
+}
+
+.subp{
+    padding: 30px 0;
+    color: #457e95;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+
+.heading-sm{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: #fff;
+    font-size: 250%;
+    letter-spacing: 5px;
+    text-shadow: 0px 10px 20px #000000;
+
+    
+}
+
+
+.two-col .parent{
+    float: left;
+    width: 42%;
+    padding: 0 4%;
+    text-align: left;
+}
+
+.white{
+    background: #323232;
+    overflow: auto;
+    position: relative;
+    padding: 50px 10px;
+    transition: ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white-heading-container{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.item1 { grid-area: email; color: skyblue; }
+.item2 { grid-area: real-email; color: rgb(142, 244, 217); }
+.item3 { grid-area: phone; color: skyblue; }
+.item4 { grid-area: real-phone; color: rgb(142, 244, 217); }
+.item5 { grid-area: address; color: skyblue; }
+.item6 { grid-area: real-address; color: rgb(142, 244, 217); }
+
+.grid-container{
+    margin-top: 5%;
+    text-align: left;
+    display: grid;
+    grid-template-areas: 'email real-email real-email real-email real-email'
+    'phone real-phone real-phone real-phone real-phone'
+    'address real-address real-address real-address real-address';
+    grid-gap: 7%;
+    font-size: 110%;
+}
+
+
+
+section{
+    overflow: auto;
+    position: relative;
+    padding: 50px 80px;
+    transition: ease;
+}
+
+.dark{
+    overflow: auto;
+    padding: 50px 80px;
+    background-color: #fff;
+    color: #f2f2f2;
+}
+
+.padding-low{
+    padding: 50px 0px !important;
+}
+
+.two-col-link{
+    text-align: center;
+    background-color: blue;
+    display: block;
+    min-width: 15%;
+    padding: 10px 12px;
+    border-radius: 24px;
+    transition: 650ms;
+    color: aliceblue;
+    font-size: 150%;
+    margin-top: 20px;
+}
+
+.fir-color:hover{
+    background-color: #f0b970;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.fir-color {
+    background-color: rgb(244, 126, 0); 
+    color: black;
+}
+
+.sec-color:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+}
+
+.scroll{
+    animation: animatesection 2s linear 1 !important;
+}
+
+.secScroll{
+    animation: animatesection_02 3s linear 1 !important;
+    position: relative;
+    display: inline-block;
+}
+
+.for-animation{
+    position: absolute;
+    color: #ffffff;
+    font-size: 550%;  /* here problem may come */
+    font-weight: 700;
+    top: 30%;
+    width: 100%;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000000;
+    height: 30px;
+    width: 100%;
+}
+
+
+@keyframes animatesection {
+    0%{
+        bottom: 10%;
+        opacity: 0.3;
+    }
+    25%{
+        bottom: 8%;
+        opacity: 0.5;
+    }
+    50%{
+       bottom: 6%;
+       opacity: 0.7;
+    }
+    75%{
+       bottom: 4%;
+       opacity: 0.9;
+    }
+    100%{
+        bottom: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes animatesection_02 {
+    0%{
+        left: 10%;
+        opacity: 0.1;
+    }
+    25%{
+        left: 8%;
+        opacity: 0.2;
+    }
+    50%{
+       left: 6%;
+       opacity: 0.5;
+    }
+    75%{
+       left: 4%;
+       opacity: 0.9;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .parallax1{
+        min-height: 100%;
+    }
+
+    #main-parallax{
+        display: none;
+    }
+
+    .subp{
+        font-size: 120%;
+    }
+
+    section{
+        padding: 10% 15% !important;
+    }
+}

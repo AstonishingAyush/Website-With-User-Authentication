@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+}
+
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px; /*here another problem may come */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.6s;
+}
+
+
+#header.sticky{
+    background: rgb(0, 0, 0);
+}
+
+#header .logo{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+#header .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .navigation li{
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header .navigation li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+#header .navigation li a:hover, #header .navigation li a.active {
+    background-color: rgb(255, 255, 255);
+    color: #000 !important;
+}
+
+
+/* header ends */

@@ -1,0 +1,119 @@
+.parallax1{
+    background: url('/img/paint-brush.jpeg');
+    min-height: 100%;
+    display: flex;
+}
+
+.parallax1, .parallax2, .parallax3{
+    position: relative;
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form-body{
+    width: 100%;
+    min-height: 100%;
+    background-image: url('/img/plax10.jpeg');
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 50px 5px 50px 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login-text{
+    margin: 34px 0;
+    font-weight: 600;
+    font-size: 138%;
+    color: #074b4d;
+}
+
+.input-group {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allfields{
+    width: 80%;
+    height: 50px;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.allfields:focus{
+    border-color: #a29bfe;
+}
+.allfields:valid{
+    border-color: #a29bfe;
+}
+
+#comment-group{
+    height: 145%;
+    display: block !important;
+    position: relative !important;
+    width: 83%;
+}
+
+
+
+
+
+
+.btn{
+    display: block;
+    width: 75%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.reg-here{
+    text-decoration: none;
+}
+
+.reg-here:hover{
+    font-weight: 600;
+}
+
+
+@media (max-width: 430px){
+    .container{
+    width: 300px !important;
+    }
+}

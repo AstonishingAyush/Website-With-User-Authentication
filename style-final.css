@@ -1,0 +1,202 @@
+.parallax1{
+    background: url('/img/index-hero.jpeg');
+    min-height: 100%;
+}
+
+.parallax2{
+    background: url('/img/mac-photo.jpeg');
+    min-height: 60%;
+}
+
+.parallax3{
+    background: url('/img/man-on-comp.webp');
+    min-height: 70%;
+}
+
+.parallax4{
+    background: url('/img/logo.jpeg');
+    min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3{
+    position: relative;
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax4{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.heading{
+    position: absolute;
+    color: #ffffff;
+    font-size: 550%;  /* here problem may come */
+    font-weight: 700;
+    top: 38%;
+    width: 100%;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.subhead{
+    padding: 4px;
+    margin: 0;
+}
+
+.subp{
+    padding: 30px 0;
+}
+
+
+.heading-sm{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: #fff;
+    font-size: 250%;
+    letter-spacing: 5px;
+    text-shadow: 0px 10px 20px #000000;
+
+    
+}
+
+
+.two-col .parent{
+    float: left;
+    width: 42%;
+    padding: 0 4%;
+    text-align: left;
+}
+
+
+
+section{
+    overflow: auto;
+    padding: 50px 80px;
+}
+
+.dark{
+    overflow: auto;
+    padding: 50px 80px;
+    background-color: #323232;
+    color: #f2f2f2;
+}
+
+.padding-low{
+    padding: 50px 0px !important;
+}
+
+.slider-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    background: #fff;
+    width: 370px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.card .content{
+    width: 370px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.card .content p{
+    color: black;
+}
+
+.card .content a{
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #262626;
+    color: #262626;
+    font-weight: 600;
+}
+
+.card .sliderText{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.card .sliderText h3{
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 42px;
+}
+
+.swiper-slide{
+    width: 400px !important;
+}
+
+.swiper-slide:nth-child(1) .sliderText{
+    background: #2196f3 ;
+}
+.swiper-slide:nth-child(2) .sliderText{
+    background: #e91e63 ;
+}
+.swiper-slide:nth-child(3) .sliderText{
+    background: #c3d41a ;
+}
+.swiper-slide:nth-child(4) .sliderText{
+    background: #ff9800 ;
+}
+.swiper-slide:nth-child(5) .sliderText{
+    background: #c33ada ;
+}
+
+.two-col-link{
+    text-align: center;
+    background-color: blue;
+    display: block;
+    min-width: 15%;
+    padding: 10px 12px;
+    border-radius: 24px;
+    transition: 650ms;
+    color: aliceblue;
+    font-size: 150%;
+    margin-top: 20px;
+}
+
+.fir-color:hover{
+    background-color: #f0b970;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.fir-color {
+    background-color: rgb(244, 126, 0); 
+    color: black;
+}
+
+.sec-color:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+}

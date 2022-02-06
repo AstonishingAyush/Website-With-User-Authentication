@@ -1,0 +1,423 @@
+#header.sticky{
+    background: rgb(255, 255, 255) !important;
+}
+
+#header .logo{
+    color: rgb(0, 0, 0) !important;
+}
+
+#header .navigation li a{
+    color: #000000 !important;
+}
+
+.parallax1{
+    background: url('/img/abouthro.jpeg');
+    min-height: 200%;
+}
+
+.parallax2{
+    background: url('/img/plax3.jpeg');
+    min-height: 60%;
+}
+
+.parallax3{
+    background: url('/img/plax2.webp');
+    min-height: 70%;
+}
+
+.parallax4{
+    background: url('/img/IMG_20220105_210419.jpeg');
+    min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3{
+    position: relative;
+    opacity: 0.75;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.parallax4{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.heading{
+    position: absolute;
+    color: #ffffff;
+    font-size: 550%;  /* here problem may come */
+    font-weight: 700;
+    top: 38%;
+    width: 100%;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.for-animation{
+    position: absolute;
+    color: #ffffff;
+    font-size: 550%;  /* here problem may come */
+    font-weight: 700;
+    top: 30%;
+    width: 100%;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000000;
+    height: 30px;
+    width: 100%;
+}
+
+
+.subhead{
+    padding: 4px;
+    margin: 0;
+}
+
+.subp{
+    padding: 30px 0;
+    font-size: 150%;
+}
+
+
+.heading-sm{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: #fff;
+    font-size: 250%;
+    letter-spacing: 5px;
+    text-shadow: 0px 10px 20px #000000;
+
+    
+}
+
+
+.two-col .parent{
+    float: left;
+    width: 42%;
+    padding: 0 4%;
+    text-align: left;
+}
+
+
+
+section{
+    overflow: auto;
+    padding: 50px 80px;
+    position: relative;
+}
+
+.scroll{
+    animation: animatesection 2s  linear 1 !important;
+}
+
+.dark{
+    overflow: auto;
+    padding: 50px 80px;
+    background-color: #1a0e0e;
+    color: #f2f2f2;
+}
+
+.padding-low{
+    padding: 50px 0px !important;
+}
+
+.two-col-link{
+    text-align: center;
+    background-color: blue;
+    display: block;
+    min-width: 15%;
+    padding: 10px 12px;
+    border-radius: 24px;
+    transition: 650ms;
+    color: aliceblue;
+    font-size: 150%;
+    margin-top: 20px;
+}
+
+
+.sec-color:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+
+.my-skillsets{
+    min-height: 75vh;
+}
+
+.center-head{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 10%;
+    color: #323232;
+}
+
+.allbox{
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.html, .css, .javascr, .php, .sql{
+    font-size: 2rem;
+    margin-bottom:3vh ;
+}
+
+.allfcontainer{
+    width: 80%;
+    height: 5vh;
+    
+    display: flex;
+}
+
+.allbcontainer{
+    position: relative;
+    width: 100%;
+    border: 2px solid #323232;
+    border-radius: 30px;
+   
+}
+
+.filler1{
+    position: relative;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    background-color: orange;
+}
+
+.filler2{
+    position: relative;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    background-color: skyblue;
+}
+
+.filler3{
+    position: relative;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    background-color: yellow;
+}
+
+.filler4{
+    position: relative;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    background-color: violet;
+}
+
+.filler5{
+    position: relative;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    background-color: pink;
+}
+
+.secScroll{
+    animation: animatehtml 3s  linear 1 !important;
+    width: 90%;
+}
+
+.thirdScroll{
+    animation: animatecss 3.5s   linear 1 !important;
+    width: 75%;
+}
+
+.fourthScroll{
+    animation: animatejava 4s   linear 1 !important;
+    width: 60%;
+}
+
+.fifthScroll{
+    animation: animatephp 4.5s  linear 1 !important;
+    width: 50%;
+}
+
+.sixthScroll{
+    animation: animatesql 6s  linear 1 !important;
+    width: 40%;
+}
+
+
+@keyframes animatesection {
+    0%{
+       transform: translateX(100vh);
+    }
+    25%{
+        
+    }
+    50%{
+        /* transform: rotate(30deg); */
+    }
+    75%{
+        
+    }
+    100%{
+        
+    }
+}
+
+
+@keyframes animatehtml{
+    0%{
+        width: 0%;
+     }
+     25%{
+         width: 22.5%;
+     }
+     50%{
+         width: 45%;
+     }
+     75%{
+         width: 67.5%;
+     }
+     100%{
+         width: 90%;
+     }
+}
+
+@keyframes animatecss{
+    0%{
+        width: 0%;
+     }
+     25%{
+         width: 18.75%;
+     }
+     50%{
+         width: 37.5%;
+     }
+     75%{
+         width: 56.25%;
+     }
+     100%{
+         width: 75%;
+     }
+}
+
+@keyframes animatejava{
+    0%{
+        width: 0%;
+     }
+     25%{
+         width: 15%;
+     }
+     50%{
+         width: 30%;
+     }
+     75%{
+         width: 45%;
+     }
+     100%{
+         width: 60%;
+     }
+}
+
+@keyframes animatephp{
+    0%{
+        width: 0%;
+     }
+     25%{
+         width: 12.5%;
+     }
+     50%{
+         width: 25%;
+     }
+     75%{
+         width: 37.5%;
+     }
+     100%{
+         width: 50%;
+     }
+}
+
+@keyframes animatesql{
+    0%{
+        width: 0%;
+     }
+     25%{
+         width: 10%;
+     }
+     50%{
+         width: 20%;
+     }
+     75%{
+         width: 30%;
+     }
+     100%{
+         width: 40%;
+     }
+}
+
+
+
+/* responsive starts */
+
+@media (max-width : 768px){
+    .heading{
+        font-size: 250%;
+        
+    }
+    .heading-sm{
+        font-size: 180%;
+    }
+    .two-col{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    } 
+}
+
+
+@media (max-width: 992px) {
+    .parallax1{
+        min-height: 100%;
+    }
+
+    #main-parallax{
+        display: none;
+    }
+
+    .subp{
+        font-size: 120%;
+    }
+
+    section{
+        padding: 10% 15% !important;
+    }
+
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-image: url(/img/parallel-icon.png) !important;
+        background-size: 35px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1000;
+    }
+}
+

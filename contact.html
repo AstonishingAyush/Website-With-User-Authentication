@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="swiper.min.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responisve.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="shortcut icon" href="/img/fav-icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body onscroll="myScroll(); mySecScroll();">
+
+    <div class="nav">
+        <header id="header">
+            <a href="#" class="logo">Ayush Sites</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Me</a></li>
+                <li><a href="comments.php">Comments</a></li>
+                <li><a href="/create.html">Create</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="#"  class="active">Contact</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="parallax1">
+        <div class="heading">Get in Touch</div>
+        <div class="for-animation" id="main-parallax"></div>
+    </div>
+
+
+    <div class="white" id="animate-section">
+        <div class="white-heading-container">
+            Reach Us
+        </div>
+        <div class="grid-container">
+            <div class="item1">Email</div>
+            <div class="item2">astonishingayush@gmail.com</div>
+            <div class="item3">Phone</div>
+            <div class="item4">+918917000018</div>
+            <div class="item5">Address</div>
+            <div class="item6">H. No. - 12,13,17, New Colony, Soyepur, Varanasi</div>
+        </div>
+    </div>
+
+
+
+    <section class="dark" id="animate-this">
+        <div class="two-col">
+            <p class="subp">
+               Hey! We are looking forward to interact with you. If you want to post a comment you can click on the button given below.
+            </p>
+        </div>
+        <div class="parent">
+            <div class="two-col-link fir-color">
+                <a href="#" style="text-decoration: none; color: aliceblue;">
+                    Post a Comment
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="footer-container">
+        <div class="footer-heading">
+            <div class="heading-container">
+                <div class="main-heading-footer">
+                    Expand Your Reach with Us Now!
+
+                </div>
+                <a href="/create.html" style="text-decoration: none; color: #fff;">
+                <div class="two-col-link sec-color  vanish">
+
+                    
+                        Know More
+                    
+
+                </div>
+            </a>
+            </div>
+        </div>
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com/astonishing_ayush/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="https://www.twitter.com/Ayush__Yadav__" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <p>©Ayush Sites | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation')
+        toggleMenu.onclick = function () {
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+
+        window.addEventListener("scroll", function () {
+            var logo = document.querySelector('.logo')
+            logo.classList.toggle('sticky', window.scrollY > 0)
+        })
+
+    let parallax = document.querySelector('#main-parallax');
+    let secScroll = document.querySelector('#animate-section')
+    let thiScroll = document.querySelector('#animate-this')
+
+    const position = parallax.offsetTop;
+    function myScroll() {
+        if (window.scrollY >= position) {
+            secScroll.classList.add('scroll');
+        } else {
+            secScroll.classList.remove('scroll')
+        }
+    }
+
+    function mySecScroll() {
+        if (window.scrollY >= position) {
+            thiScroll.classList.add('secScroll');
+        } else {
+            thiScroll.classList.remove('secScroll')
+        }
+    }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
