@@ -1,2 +1,1 @@
-1. In the config file, write your server details for the user id authentication using SQL Database, so that your login, register and welcome page can work.
-2. You can easily create your hosting account with SQL Database with InfinityFree, log on to https://www.infinityfree.net . 
+1. If you want dynamic pages to work and you want php pages then you can switch to dynamic branch in the repository.
